@@ -72,9 +72,26 @@ Expected Output: 3
 Describe: detectOffensiveWords() 
 
 Test: "It should return true if a passage includes zoinks in all lowercase" , muppeteer, biffaroni, and loopdaloop 
-Code: 
-const text = "zoinks"
-const word = "zoinks"
+Code: detectOffensiveWords(text)
+let text = "zoinks"
+let word = "zoinks"
 detectOffensiveWords(text, word);
 Expected Output: true 
+
+Test: "It should return true if a passage includes zoinks, muppeteer, biffaroni, and loopdaloop in all lowercase, if it occurs once"  
+Code: detectOffensiveWords(text)
+let text = "zoinks"
+let word = "zoinks"
+detectOffensiveWords(text, word);
+Expected Output: true 
+
+Test: "It should return true if a passage includes zoinks, muppeteer, biffaroni, and loopdaloop in all lowercase, if it occurs once"  
+Code: detectOffensiveWords(text)
+let text = "zoinks"
+let word = "zoinks"
+detectOffensiveWords(text, word);
+Expected Output: true 
+
+"apple ZOINKS pie muppeteer scrum loopdaloop HELLO zoinks point LOOPDALOOP"
+
 
